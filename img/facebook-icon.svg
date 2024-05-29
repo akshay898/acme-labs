@@ -1,0 +1,7 @@
+<svg id="facebook-icon" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+  <path id="Path_58" data-name="Path 58" d="M0,0H70V70H0Z" fill="none" fill-rule="evenodd"/>
+  <g id="Group_55" data-name="Group 55">
+    <path id="Path_59" data-name="Path 59" d="M70,35A35,35,0,1,0,35,70,35,35,0,0,0,70,35ZM3.182,35A31.818,31.818,0,1,1,35,66.818,31.818,31.818,0,0,1,3.182,35Z" fill="#4338ca"/>
+    <path id="Path_60" data-name="Path 60" d="M22.2,47.816V27.276h6.514l1.029-6.807H22.2V17.055c0-1.776.56-3.471,3.01-3.471h4.9V6.79H23.154c-5.845,0-7.44,4.005-7.44,9.557v4.118H11.7v6.81h4.011V47.816Z" transform="translate(14.113 7.723)" fill="#4338ca"/>
+  </g>
+</svg>

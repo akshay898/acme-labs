@@ -1,0 +1,5 @@
+<svg id="arrow-left-circle-fill" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="Group_25" data-name="Group 25">
+    <path id="Path_12" data-name="Path 12" d="M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Zm8.75,18.75a1.25,1.25,0,0,1,0,2.5H14.267l5.368,5.365a1.252,1.252,0,1,1-1.77,1.77l-7.5-7.5a1.25,1.25,0,0,1,0-1.77l7.5-7.5a1.252,1.252,0,0,1,1.77,1.77L14.267,18.75Z" fill="#4338ca"/>
+  </g>
+</svg>

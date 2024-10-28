@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script  type="text/javascript" src="./app.js"></script>
     <title>Anizo Labs</title>
     <div id="Anizoheader">
         <div class="header header-row" >
@@ -20,7 +25,7 @@
                     <ul>
                         <li><a href="#"><span class="underline-effect">Home</span></a></li>
                         <li><a href="#"><span class="underline-effect">Screening</span></a></li>
-                        <li><a href="#"><span class="underline-effect">License</span></a></li>
+                        <li><a href="./license.html"><span class="underline-effect">License</span></a></li>
                         <li><a href="#"><span class="underline-effect">Business</span></a></li>
                         <li><a href="#"><button class="headerbutton"><span class="blueline-effect">Login</span></button></a></li>
                     </ul>
@@ -31,8 +36,8 @@
 </head>
 <body>
  <div class="body-anizo">
-    <script  type="text/javascript" src="./app.js"></script>
-    <div class="screening">
+    <article class="scroller">
+    <section class="screening">
         <div class="screening-row">
             <div class="screening-col">
                     <h2 class="screening-heading">Candidate Screening made simpler</h2>
@@ -45,25 +50,28 @@
                         <a href="#"><button class="tranparentbutton"><span class="underline-effect">Book a demo</span></button></a>
                     </div>
             </div>
-            <div class="screening-col bb">
-                <div class="button-circle">
-                    <button class="circle-button effiency">Efficiency</button>
-                    <button class="circle-button fair">Fair Assessment</button>
-                    <button class="circle-button trust">Trust</button>
-                    <button class="circle-button pricing">Pricing</button>
+            <div class="universe">
+                <div class="effiency">
+                    <button class="circle-button">Efficiency</button>
                 </div>
-                <div class="out-circle an-circle"></div>
-                <div class="in-circle">
-                    <img src="./img/World-map.png" alt="World-map" class="world"/>
+                <div class="fair">
+                    <button class="circle-button">Fair Assessment</button>
                 </div>
-
+                <div class="trust">
+                    <button class="circle-button">Trust</button>
+                </div>
+                <div class="pricing">
+                    <button class="circle-button">Pricing</button>
+                </div>
+                <img class="particle" src="./img/particles-circle.png" alt="particle map">
+                <img class="globe" src="./img/World-map.png" alt="world map">
             </div>
         </div>
-    </div>
+    </section>
     <div class="thin-strip"></div>
-    <div class="exist">
+    <section class="exist">
         <div class="exist-row">
-            <div class="exist-col">
+            <div class="exist-col contentleft">
                 <p class="blue-text">WHY WE EXIST?</p>
                 <h2 class="content-head">WHY WE EXIST?</h2>
                 <ul class="ex-point">
@@ -78,8 +86,8 @@
                 <img src="./img/think.webp" alt="thinking" title="thinking" class="col-img" id="col-img"/>
             </div>
         </div>
-    </div>
-    <div class="alternatives">
+    </section>
+    <section class="alternatives">
         <div class="alternatives-row">
             <div class="alternatives-col">
                 <p class="blue-text">WHAT ARE ALTERNATIVES?</p>
@@ -94,15 +102,16 @@
                 <img src="./img/finger-pointing.svg" alt="pointing" title="pointing" class="col-img" id="col-img"/>
             </div>
         </div>
-    </div>
-    <div class="exploring">
+    </section>
+    <section class="exploring">
+        <div class="exploring-container">
         <p class="blue-text">EXPLORING THE GAP</p>
         <h2 class="content-head">INSIGHTFUL INTERVIEWS WITH INDUSTRY LEADERS</h2>
         <p>"Dive into 'Exploring The Gap' where we bring you closer to the minds shaping industries. Our exclusive interviews offer deep insights, uncovering the stories behind the successes and the pivotal moments that define our guests.</p>
         <div class="exploring-row">
             <div class="coding exploring-col">
                 
-                <svg id="Coding-Icon" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                <svg class="svg-explore" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
                     <g id="Ellipse_62" data-name="Ellipse 62" fill="#352d80" stroke="#fff" stroke-width="8">
                       <circle cx="50" cy="50" r="50" stroke="none"/>
                       <circle cx="50" cy="50" r="46" fill="none"/>
@@ -114,14 +123,13 @@
                       </g>
                     </g>
                   </svg>
-                  
                 <h3 class="exploring-head">CODING</h3>
                 <p>Many coding platforms are outdated due to readily available IDEs online and ChatGPT's capability to write code.</p>
-                <br>
+                <hr>
             </div>
             <div class="sandbox exploring-col">
 
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="118" height="118" viewBox="0 0 118 118">
+                <svg class="svg-explore" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="118" height="118" viewBox="0 0 118 118">
                     <defs>
                       <filter id="Ellipse_63" x="0" y="0" width="118" height="118" filterUnits="userSpaceOnUse">
                         <feOffset dy="3" input="SourceAlpha"/>
@@ -138,7 +146,7 @@
                         <feComposite operator="in" in2="SourceGraphic"/>
                       </filter>
                     </defs>
-                    <g id="Sandbox-icon" transform="translate(9 6)">
+                    <g transform="translate(9 6)">
                       <g data-type="innerShadowGroup">
                         <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Ellipse_63)">
                           <g id="Ellipse_63-3" data-name="Ellipse 63" transform="translate(9 6)" fill="#a95ea3" stroke="#fff" stroke-width="8">
@@ -162,13 +170,13 @@
                       </g>
                     </g>
                   </svg>                  
-
                 <h3 class="exploring-head">SANDBOX</h3>
                 <p>Cloud sandbox environments are offered by some providers, but they tend to be costly and require monthly commitments.</p>
+                <hr>
             </div>
             <div class="question exploring-col">
 
-                <svg id="Question-Icon" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                <svg class="svg-explore" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
                     <g id="Ellipse_64" data-name="Ellipse 64" fill="#146030" stroke="#fff" stroke-width="8">
                       <circle cx="50" cy="50" r="50" stroke="none"/>
                       <circle cx="50" cy="50" r="46" fill="none"/>
@@ -177,13 +185,14 @@
                       <path id="Path_784" data-name="Path 784" d="M63.419,0C58.351-.012,49.125,4.866,48.833,9.2s.591,4.6,1,4.841h4.758c1.087-2.455,2.411-3.89,5.884-3.86s7.283,4.374,5.676,8.222-3.093,5.188-5.071,9.348a18.7,18.7,0,0,0-.042,15.671l5.864.1c-1.451-7.459,6.231-14.105,9.286-18.7s3.345-6.342,3.38-10.141A14.55,14.55,0,0,0,75.4,4.549C72.556,1.616,68.487.012,63.419,0Zm.292,48.391a7.105,7.105,0,1,0,7.095,7.095A7.091,7.091,0,0,0,63.711,48.391Z" transform="translate(0 0)" fill="#fff"/>
                     </g>
                   </svg>
-
                 <h3 class="exploring-head">QUESTION BANK</h3>
                 <p>There is a lack of comprehensive question banks to adequately cover all expertise areas.</p>
+                <hr>
             </div>
         </div>
     </div>
-    <div class="how">
+</section>
+    <section class="how">
         <div class="how-row">
             <div class="how-col">
                 <p class="blue-text">HOW DO WE DO IT?</p>
@@ -202,8 +211,9 @@
                 <img src="./img/jigsaw.svg" alt="how" title="how" class="col-img" id="col-img"/>
             </div>
         </div>
-    </div>
-    <div class="applicants">
+    </section>
+    <section class="applicants">
+        <div class="applicants-content">
         <p class="blue-text">Getting started</p>
         <h2 class="content-head">EVALUATE YOUR APPLICANTS</h2>
         <div class="applicants-row">
@@ -259,7 +269,9 @@
         
         </div>
     </div>
-    <div class="value">
+</section>
+    <section class="value">
+        <div class="value-content">
         <p class="blue-text">Value we bring</p>
         <h2 class="content-head">VALUE WE BRING</h2>
         <div class="value-row">
@@ -285,24 +297,179 @@
             </div>
         </div>
     </div>
-    <div class="testimonials">
+</section>
+    <section class="testimonials">
         <h2 class="content-head">OUR CLIENT TESTIMONIALS</h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-        <div class="testimonials-row">
-            <div class="testimonials-col">
-                <h3>1. EFFICIENCY</h3>
-                <p>AnzioLabs streamlines tech interviews, ensuring they are efficient and precise.</p>
+        <div class="owl-carousel owl-theme" style="margin-top:30px;">
+            <div class="item">
+                <div class="white-box">
+                    <div class="img-text">
+                        <img src="./img/woman.png" alt="profile photo" title="profile photo">
+                        <h3 class="box-head">Lorem ipsum</h3>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nesciunt dolorem ratione, necessitatibus quisquam quo. Quidem officia quos vero cum.</p>
+                    <span class="stars">
+                        <img src="./img/star.svg" alt="star" class="star">
+                        <img src="./img/star.svg" alt="star" class="star">
+                        <img src="./img/star.svg" alt="star" class="star">
+                        <img src="./img/star.svg" alt="star" class="star">
+                        <img src="./img/star.svg" alt="star" class="star">
+                    </span>
+                </div>
             </div>
-            <div class="testimonials-col">
-                <h3>2. FAIR ASSESSMENT</h3>
-                <p>The platform significantly reduces subjectivity and bias in the hiring process.</p>
+            <div class="item">
+                <div class="blue-box">
+                    <div class="img-text">
+                        <img src="./img/woman.png" alt="profile photo" title="profile photo">
+                        <h3 class="box-head">Lorem ipsum</h3>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nesciunt dolorem ratione, necessitatibus quisquam quo. Quidem officia quos vero cum.</p>
+                    <span class="stars">
+                        <img src="./img/star.svg" alt="star" class="star">
+                        <img src="./img/star.svg" alt="star" class="star">
+                        <img src="./img/star.svg" alt="star" class="star">
+                        <img src="./img/star.svg" alt="star" class="star">
+                        <img src="./img/star.svg" alt="star" class="star">
+                    </span>
+                </div>
             </div>
-            <div class="testimonials-col">
-                <h3>3. TRUST</h3>
-                <p>Enhances the trust in candidates selected for the full interview loop.</p>
+            <div class="item">
+                <div class="white-box">
+                    <div class="img-text">
+                        <img src="./img/woman.png" alt="profile photo" title="profile photo">
+                        <h3 class="box-head">Lorem ipsum</h3>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nesciunt dolorem ratione, necessitatibus quisquam quo. Quidem officia quos vero cum.</p>
+                    <span class="stars">
+                        <img src="./img/star.svg" alt="star" class="star">
+                        <img src="./img/star.svg" alt="star" class="star">
+                        <img src="./img/star.svg" alt="star" class="star">
+                        <img src="./img/star.svg" alt="star" class="star">
+                        <img src="./img/star.svg" alt="star" class="star">
+                    </span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="blue-box">
+                    <div class="img-text">
+                        <img src="./img/woman.png" alt="profile photo" title="profile photo">
+                        <h3 class="box-head">Lorem ipsum</h3>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nesciunt dolorem ratione, necessitatibus quisquam quo. Quidem officia quos vero cum.</p>
+                    <span class="stars">
+                        <img src="./img/star.svg" alt="star" class="star">
+                        <img src="./img/star.svg" alt="star" class="star">
+                        <img src="./img/star.svg" alt="star" class="star">
+                        <img src="./img/star.svg" alt="star" class="star">
+                        <img src="./img/star.svg" alt="star" class="star">
+                    </span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="white-box">
+                    <div class="img-text">
+                        <img src="./img/woman.png" alt="profile photo" title="profile photo">
+                        <h3 class="box-head">Lorem ipsum</h3>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nesciunt dolorem ratione, necessitatibus quisquam quo. Quidem officia quos vero cum.</p>
+                    <span class="stars">
+                        <img src="./img/star.svg" alt="star" class="star">
+                        <img src="./img/star.svg" alt="star" class="star">
+                        <img src="./img/star.svg" alt="star" class="star">
+                        <img src="./img/star.svg" alt="star" class="star">
+                        <img src="./img/star.svg" alt="star" class="star">
+                    </span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="blue-box">
+                    <div class="img-text">
+                        <img src="./img/woman.png" alt="profile photo" title="profile photo">
+                        <h3 class="box-head">Lorem ipsum</h3>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nesciunt dolorem ratione, necessitatibus quisquam quo. Quidem officia quos vero cum.</p>
+                    <span class="stars">
+                        <img src="./img/star.svg" alt="star" class="star">
+                        <img src="./img/star.svg" alt="star" class="star">
+                        <img src="./img/star.svg" alt="star" class="star">
+                        <img src="./img/star.svg" alt="star" class="star">
+                        <img src="./img/star.svg" alt="star" class="star">
+                    </span>
+                </div>
             </div>
         </div>
-    </div>
- </div>
+    </section>
+    <footer>
+        <div class="footer-anizo">
+            <div class="footer-row">
+                <div class="footer-left">
+                    <h1>Build Great Teams With <span style="color:#FFD600;">Anizo Labs</span></h1>
+                    <div class="six-footer">
+                        <span class="six-text"><a href="#" class="underline-effect">About</a></span>
+                        <span class="six-text"><a href="#" class="underline-effect">Contact Us</a></span>
+                        <span class="six-text"><a href="#" class="underline-effect">Jobs</a></span>
+                        <span class="six-text"><a href="#" class="underline-effect">Privacy</a></span>
+                        <span class="six-text"><a href="#" class="underline-effect">Term of Service</a></span>
+                        <span class="six-text"><a href="#" class="underline-effect">Feedback</a></span>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="contact">
+                        <div class="four-footer">
+                            <span class="four-icon">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+                                        <g id="linkedin--icon" transform="translate(143 -145)">
+                                          <path id="Path_680" data-name="Path 680" d="M-108,145a35,35,0,0,0-35,35,35,35,0,0,0,35,35,35,35,0,0,0,35-35A35,35,0,0,0-108,145Zm21.848,56.834a30.563,30.563,0,0,1-9.816,6.617A30.606,30.606,0,0,1-108,210.871a30.95,30.95,0,0,1-12.031-2.42,30.858,30.858,0,0,1-9.816-6.617,30.562,30.562,0,0,1-6.617-9.816A30.6,30.6,0,0,1-138.9,180a30.95,30.95,0,0,1,2.42-12.031,30.858,30.858,0,0,1,6.617-9.816,31.035,31.035,0,0,1,9.83-6.631A30.95,30.95,0,0,1-108,149.1a30.95,30.95,0,0,1,12.031,2.42,30.858,30.858,0,0,1,9.816,6.617,30.563,30.563,0,0,1,6.617,9.816,30.606,30.606,0,0,1,2.42,12.031,30.95,30.95,0,0,1-2.42,12.031A30.858,30.858,0,0,1-86.152,201.834Z" transform="translate(0 0)" fill="#4338ca"/>
+                                          <rect id="Rectangle_515" data-name="Rectangle 515" width="5.848" height="18.715" transform="translate(-124.328 174.609)" fill="#4338ca"/>
+                                          <path id="Path_681" data-name="Path 681" d="M-11.526,273a3.279,3.279,0,0,0-3.574,3.246,3.247,3.247,0,0,0,3.492,3.246h.047A3.262,3.262,0,0,0-8,276.246,3.264,3.264,0,0,0-11.526,273Z" transform="translate(-110.078 -110.197)" fill="#4338ca"/>
+                                          <path id="Path_682" data-name="Path 682" d="M84.21,346.9c-3.352,0-5.449,1.828-5.836,3.117v-2.941H71.8c.082,1.559,0,18.715,0,18.715h6.574V355.677a4.423,4.423,0,0,1,.141-1.535,3.343,3.343,0,0,1,3.164-2.3c2.285,0,3.316,1.734,3.316,4.266v9.68h6.633V355.384C91.628,349.6,88.37,346.9,84.21,346.9Z" transform="translate(-183.362 -172.484)" fill="#4338ca"/>
+                                        </g>
+                                      </svg>  
+                                </a>                            
+                            </span>
+                            <span class="four-icon">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+                                        <g id="youtube-icon" transform="translate(-1373.131 -4788.5)">
+                                          <path id="Path_406" data-name="Path 406" d="M70,35A35,35,0,1,0,35,70,35,35,0,0,0,70,35ZM3.182,35A31.818,31.818,0,1,1,35,66.818,31.818,31.818,0,0,1,3.182,35Z" transform="translate(1373.131 4788.5)" fill="#4338ca"/>
+                                          <path id="youtube-svgrepo-com" d="M15.461,13.154a2.4,2.4,0,0,0,2.061-.991,3.828,3.828,0,0,0,.543-2.294v-3.4a3.758,3.758,0,0,0-.543-2.274,2.409,2.409,0,0,0-2.061-.989,2.376,2.376,0,0,0-2.038.989,3.768,3.768,0,0,0-.545,2.276v3.4a3.869,3.869,0,0,0,.545,2.294,2.376,2.376,0,0,0,2.038.989ZM14.626,6.12c0-.893.272-1.34.836-1.34.584,0,.836.447.836,1.34V10.2c0,.9-.252,1.36-.836,1.36-.563,0-.836-.467-.836-1.36Zm5.032,6.315a4.916,4.916,0,0,1-.154-1.456V3.322h1.768v7.13a4.124,4.124,0,0,0,.02.682c.039.272.174.426.408.426.348,0,.717-.272,1.106-.836v-7.4h1.768v9.7H22.806V11.949a2.784,2.784,0,0,1-2,1.2,1.1,1.1,0,0,1-1.145-.719Zm6.724,11.757v.893H24.633v-.893c0-.875.293-1.323.875-1.323S26.382,23.317,26.382,24.192ZM7.377,3.634C6.951,2.429,6.525,1.2,6.113,0H8.176L9.554,5.11,10.875,0h1.983L10.507,7.753v5.266H8.565V7.753A31.018,31.018,0,0,0,7.377,3.634Zm22.385,14.36a3.654,3.654,0,0,0-3.109-2.837,99.745,99.745,0,0,0-10.786-.389A99.178,99.178,0,0,0,5.1,15.157a3.675,3.675,0,0,0-3.126,2.837,31.731,31.731,0,0,0-.506,6.8,30.559,30.559,0,0,0,.506,6.8,3.612,3.612,0,0,0,3.109,2.818,95.2,95.2,0,0,0,10.784.408,95.258,95.258,0,0,0,10.786-.408,3.636,3.636,0,0,0,3.109-2.818,31.819,31.819,0,0,0,.506-6.8,30.59,30.59,0,0,0-.508-6.8ZM9.69,19.956H7.613V31.012H5.669V19.956H3.627V18.129H9.69Zm5.248,11.056H13.206V29.963a2.824,2.824,0,0,1-1.983,1.186A1.065,1.065,0,0,1,10.1,30.43a4.682,4.682,0,0,1-.156-1.417v-7.6h1.731v7.073a4.749,4.749,0,0,0,.018.682c.041.27.176.408.408.408.352,0,.721-.27,1.108-.815V21.418h1.731v9.594Zm6.608-2.876a6.893,6.893,0,0,1-.176,1.942,1.367,1.367,0,0,1-1.38,1.069,2.4,2.4,0,0,1-1.809-1.069v.934H16.453V18.129h1.727v4.217A2.359,2.359,0,0,1,19.988,21.3a1.365,1.365,0,0,1,1.38,1.088,6.664,6.664,0,0,1,.176,1.923Zm6.567-1.594H24.633v1.69c0,.9.293,1.34.9,1.34a.747.747,0,0,0,.778-.7,10.5,10.5,0,0,0,.039-1.186h1.768v.254a7.567,7.567,0,0,1-.039,1.127,2.3,2.3,0,0,1-.408,1.049,2.409,2.409,0,0,1-2.1,1.03,2.467,2.467,0,0,1-2.1-.991,3.662,3.662,0,0,1-.563-2.255V24.54a3.712,3.712,0,0,1,.545-2.255,2.656,2.656,0,0,1,4.139,0,3.834,3.834,0,0,1,.526,2.255v2Zm-8.3-2.372v4.1c0,.875-.254,1.3-.758,1.3a1.249,1.249,0,0,1-.877-.426V23.3a1.244,1.244,0,0,1,.877-.428c.5,0,.758.447.758,1.3Z" transform="translate(1392.261 4805.266)" fill="#4338ca"/>
+                                        </g>
+                                      </svg> 
+                                </a>                             
+                            </span>
+                            <span class="four-icon">
+                                <a href="#">
+                                    <svg id="facebook-icon" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+                                        <path id="Path_58" data-name="Path 58" d="M0,0H70V70H0Z" fill="none" fill-rule="evenodd"/>
+                                        <g id="Group_55" data-name="Group 55">
+                                          <path id="Path_59" data-name="Path 59" d="M70,35A35,35,0,1,0,35,70,35,35,0,0,0,70,35ZM3.182,35A31.818,31.818,0,1,1,35,66.818,31.818,31.818,0,0,1,3.182,35Z" fill="#4338ca"/>
+                                          <path id="Path_60" data-name="Path 60" d="M22.2,47.816V27.276h6.514l1.029-6.807H22.2V17.055c0-1.776.56-3.471,3.01-3.471h4.9V6.79H23.154c-5.845,0-7.44,4.005-7.44,9.557v4.118H11.7v6.81h4.011V47.816Z" transform="translate(14.113 7.723)" fill="#4338ca"/>
+                                        </g>
+                                      </svg>
+                                </a>
+                            </span>
+                            <span class="four-icon">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+                                        <g id="instagram-icon" transform="translate(143 -145)">
+                                          <path id="Path_61" data-name="Path 61" d="M-108,145a35,35,0,0,0-35,35,35,35,0,0,0,35,35,35,35,0,0,0,35-35A35,35,0,0,0-108,145Zm21.848,56.834a30.562,30.562,0,0,1-9.816,6.617A30.606,30.606,0,0,1-108,210.871a30.95,30.95,0,0,1-12.031-2.42,30.859,30.859,0,0,1-9.816-6.617,30.563,30.563,0,0,1-6.617-9.816A30.6,30.6,0,0,1-138.9,180a30.95,30.95,0,0,1,2.42-12.031,30.858,30.858,0,0,1,6.617-9.816,31.034,31.034,0,0,1,9.83-6.631A30.95,30.95,0,0,1-108,149.1a30.95,30.95,0,0,1,12.031,2.42,30.858,30.858,0,0,1,9.816,6.617,30.563,30.563,0,0,1,6.617,9.816,30.606,30.606,0,0,1,2.42,12.031,30.95,30.95,0,0,1-2.42,12.031A30.858,30.858,0,0,1-86.152,201.834Z" transform="translate(0 0)" fill="#4338ca"/>
+                                          <path id="Path_62" data-name="Path 62" d="M17.527,273H-7.127a7.78,7.78,0,0,0-7.773,7.772V305.44a7.78,7.78,0,0,0,7.773,7.772H17.527A7.78,7.78,0,0,0,25.3,305.44V280.757A7.8,7.8,0,0,0,17.527,273Zm2.23,4.632h.9v6.815l-6.8.016-.016-6.814Zm-20.3,11.337a7.04,7.04,0,0,1,11.463,0,6.975,6.975,0,0,1,1.335,4.13,7.066,7.066,0,1,1-12.8-4.13Zm21.922,16.455a3.853,3.853,0,0,1-3.847,3.847H-7.127a3.853,3.853,0,0,1-3.847-3.847V288.969h6a10.939,10.939,0,0,0-.817,4.13,10.992,10.992,0,1,0,21.168-4.13h6Z" transform="translate(-113.188 -113.1)" fill="#4338ca"/>
+                                        </g>
+                                      </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <p class="copy-text">Copyright 2024 Anzio Labs. All Right Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+</article>
+</div>
 </body>
 </html>
